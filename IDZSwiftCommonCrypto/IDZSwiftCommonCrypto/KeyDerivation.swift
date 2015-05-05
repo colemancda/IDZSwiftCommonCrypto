@@ -27,12 +27,12 @@ public class PBKDF
             }
         }
     }
-    public class func calibrate(passwordLength: UInt, saltLength: UInt, algorithm: PseudoRandomAlgorithm, derivedKeyLength: UInt, msec : UInt32) -> UInt
+    public class func calibrate(passwordLength: Int, saltLength: Int, algorithm: PseudoRandomAlgorithm, derivedKeyLength: Int, msec : UInt32) -> UInt
     {
         return UInt(CCCalibratePBKDF(CCPBKDFAlgorithm(kCCPBKDF2), passwordLength, saltLength, algorithm.nativeValue(), derivedKeyLength, msec))
     }
     
-    public class func deriveKey(password: UnsafePointer<Int8>, passwordLen: UInt, salt: UnsafePointer<UInt8>, saltLen: UInt, prf: PseudoRandomAlgorithm, rounds: uint, derivedKey: UnsafeMutablePointer<UInt8>, derivedKeyLen: UInt)
+    public class func deriveKey(password: UnsafePointer<Int8>, passwordLen: Int, salt: UnsafePointer<UInt8>, saltLen: Int, prf: PseudoRandomAlgorithm, rounds: uint, derivedKey: UnsafeMutablePointer<UInt8>, derivedKeyLen: Int)
     {
         var status : Int32 = CCKeyDerivationPBKDF(CCPBKDFAlgorithm(kCCPBKDF2), password, passwordLen, salt, saltLen, prf.nativeValue(), rounds, derivedKey, derivedKeyLen)
         if(status != Int32(kCCSuccess))
