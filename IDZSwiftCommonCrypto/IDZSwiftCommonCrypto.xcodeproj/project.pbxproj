@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C09D79B19E0D4C900A93684 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0C09D79A19E0D4C900A93684 /* README.md */; };
 		0C67310219D1EB80009828B8 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C67310119D1EB80009828B8 /* Status.swift */; };
 		0CCB89B119CE05F800068ED6 /* IDZSwiftCommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CCB89B019CE05F800068ED6 /* IDZSwiftCommonCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CCB89BB19CE05F800068ED6 /* IDZSwiftCommonCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB89BA19CE05F800068ED6 /* IDZSwiftCommonCryptoTests.swift */; };
 		0CCB89CA19CE071D00068ED6 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB89C519CE071D00068ED6 /* Digest.swift */; };
 		0CCB89CB19CE071D00068ED6 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB89C619CE071D00068ED6 /* HMAC.swift */; };
 		0CCB89D219CF416B00068ED6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB89D119CF416B00068ED6 /* Utilities.swift */; };
+		6EC4C1C71B1CB5070068522E /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCB89AB19CE05F800068ED6 /* IDZSwiftCommonCrypto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,13 @@
 			containerPortal = 6EC3F60F1AF6DD0D00B71D46 /* CommonCrypto.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 6EC3F5F31AF6DCFE00B71D46;
+			remoteInfo = CommonCrypto;
+		};
+		6EC4C1381B1CAF1D0068522E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EC3F60F1AF6DD0D00B71D46 /* CommonCrypto.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EC3F5F21AF6DCFE00B71D46;
 			remoteInfo = CommonCrypto;
 		};
 /* End PBXContainerItemProxy section */
@@ -67,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC4C1C71B1CB5070068522E /* IDZSwiftCommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +180,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6EC4C1391B1CAF1D0068522E /* PBXTargetDependency */,
 			);
 			name = IDZSwiftCommonCrypto;
 			productName = IDZSwiftCommonCrypto;
@@ -202,7 +211,7 @@
 		0CCB89A219CE05F800068ED6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = iOSDeveloperZone.com;
 				TargetAttributes = {
 					0CCB89AA19CE05F800068ED6 = {
@@ -271,7 +280,6 @@
 			files = (
 				0CCB89D219CF416B00068ED6 /* Utilities.swift in Sources */,
 				0C67310219D1EB80009828B8 /* Status.swift in Sources */,
-				0C09D79B19E0D4C900A93684 /* README.md in Sources */,
 				0CCB89CA19CE071D00068ED6 /* Digest.swift in Sources */,
 				0CCB89CB19CE071D00068ED6 /* HMAC.swift in Sources */,
 			);
@@ -292,6 +300,11 @@
 			isa = PBXTargetDependency;
 			target = 0CCB89AA19CE05F800068ED6 /* IDZSwiftCommonCrypto */;
 			targetProxy = 0CCB89CE19CE0EDF00068ED6 /* PBXContainerItemProxy */;
+		};
+		6EC4C1391B1CAF1D0068522E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CommonCrypto;
+			targetProxy = 6EC4C1381B1CAF1D0068522E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -384,6 +397,7 @@
 		0CCB89BF19CE05F800068ED6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -407,6 +421,7 @@
 		0CCB89C019CE05F800068ED6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
