@@ -1,3 +1,0 @@
-[submodule "CommonCrypto"]
-	path = CommonCrypto
-	url = https://github.com/colemancda/CommonCrypto.git
