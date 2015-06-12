@@ -13,7 +13,7 @@
 		0CCB89CA19CE071D00068ED6 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB89C519CE071D00068ED6 /* Digest.swift */; };
 		0CCB89CB19CE071D00068ED6 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB89C619CE071D00068ED6 /* HMAC.swift */; };
 		0CCB89D219CF416B00068ED6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB89D119CF416B00068ED6 /* Utilities.swift */; };
-		6E9E094C1B2A42C6008FCCD2 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9E09491B2A42B1008FCCD2 /* CommonCrypto.framework */; };
+		6E2C0B681B2A95F90008602A /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2C0B671B2A95F90008602A /* CommonCrypto.framework */; };
 		6EC4C1C71B1CB5070068522E /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCB89AB19CE05F800068ED6 /* IDZSwiftCommonCrypto.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,20 +24,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0CCB89AA19CE05F800068ED6;
 			remoteInfo = IDZSwiftCommonCrypto;
-		};
-		6E9E09481B2A42B1008FCCD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E9E09441B2A42B0008FCCD2 /* CommonCrypto.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6EC3F5F31AF6DCFE00B71D46;
-			remoteInfo = CommonCrypto;
-		};
-		6E9E094A1B2A42C1008FCCD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E9E09441B2A42B0008FCCD2 /* CommonCrypto.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6EC3F5F21AF6DCFE00B71D46;
-			remoteInfo = CommonCrypto;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -60,7 +46,7 @@
 		0CCB89C719CE071D00068ED6 /* KeyDerivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyDerivation.swift; sourceTree = "<group>"; };
 		0CCB89C819CE071D00068ED6 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		0CCB89D119CF416B00068ED6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		6E9E09441B2A42B0008FCCD2 /* CommonCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonCrypto.xcodeproj; path = ../Carthage/Checkouts/CommonCrypto/CommonCrypto/CommonCrypto.xcodeproj; sourceTree = "<group>"; };
+		6E2C0B671B2A95F90008602A /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = ../Carthage/Build/Mac/CommonCrypto.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E9E094C1B2A42C6008FCCD2 /* CommonCrypto.framework in Frameworks */,
+				6E2C0B681B2A95F90008602A /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +72,7 @@
 		0CCB89A119CE05F800068ED6 = {
 			isa = PBXGroup;
 			children = (
-				6E9E09441B2A42B0008FCCD2 /* CommonCrypto.xcodeproj */,
+				6E2C0B691B2A95FD0008602A /* Frameworks */,
 				0C09D79A19E0D4C900A93684 /* README.md */,
 				0C09D79919E0CFB500A93684 /* README.playground */,
 				0C3079D619DD47900018E538 /* GenerateCommonCryptoModule */,
@@ -148,12 +134,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6E9E09451B2A42B0008FCCD2 /* Products */ = {
+		6E2C0B691B2A95FD0008602A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E9E09491B2A42B1008FCCD2 /* CommonCrypto.framework */,
+				6E2C0B671B2A95F90008602A /* CommonCrypto.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +168,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				6E9E094B1B2A42C1008FCCD2 /* PBXTargetDependency */,
 			);
 			name = IDZSwiftCommonCrypto;
 			productName = IDZSwiftCommonCrypto;
@@ -234,12 +219,6 @@
 			mainGroup = 0CCB89A119CE05F800068ED6;
 			productRefGroup = 0CCB89AC19CE05F800068ED6 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 6E9E09451B2A42B0008FCCD2 /* Products */;
-					ProjectRef = 6E9E09441B2A42B0008FCCD2 /* CommonCrypto.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0CCB89AA19CE05F800068ED6 /* IDZSwiftCommonCrypto */,
@@ -247,16 +226,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		6E9E09491B2A42B1008FCCD2 /* CommonCrypto.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CommonCrypto.framework;
-			remoteRef = 6E9E09481B2A42B1008FCCD2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0CCB89A919CE05F800068ED6 /* Resources */ = {
@@ -302,11 +271,6 @@
 			isa = PBXTargetDependency;
 			target = 0CCB89AA19CE05F800068ED6 /* IDZSwiftCommonCrypto */;
 			targetProxy = 0CCB89CE19CE0EDF00068ED6 /* PBXContainerItemProxy */;
-		};
-		6E9E094B1B2A42C1008FCCD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CommonCrypto;
-			targetProxy = 6E9E094A1B2A42C1008FCCD2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -407,6 +371,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/Coleman/Developer/MyProjects/IDZSwiftCommonCrypto/Carthage/Build/Mac,
 				);
 				INFOPLIST_FILE = IDZSwiftCommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -431,6 +396,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/Coleman/Developer/MyProjects/IDZSwiftCommonCrypto/Carthage/Build/Mac,
 				);
 				INFOPLIST_FILE = IDZSwiftCommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
