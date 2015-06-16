@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E95D25F1B2B3403000DD4DA"
-               BuildableName = "IDZSwiftCommonCrypto.framework"
-               BlueprintName = "IDZSwiftCommonCrypto iOS"
+               BlueprintIdentifier = "0CCB89B519CE05F800068ED6"
+               BuildableName = "IDZSwiftCommonCryptoTests.xctest"
+               BlueprintName = "IDZSwiftCommonCryptoTests"
                ReferencedContainer = "container:IDZSwiftCommonCrypto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,23 +28,42 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0CCB89B519CE05F800068ED6"
+               BuildableName = "IDZSwiftCommonCryptoTests.xctest"
+               BlueprintName = "IDZSwiftCommonCryptoTests"
+               ReferencedContainer = "container:IDZSwiftCommonCrypto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0CCB89B519CE05F800068ED6"
+            BuildableName = "IDZSwiftCommonCryptoTests.xctest"
+            BlueprintName = "IDZSwiftCommonCryptoTests"
+            ReferencedContainer = "container:IDZSwiftCommonCrypto.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E95D25F1B2B3403000DD4DA"
-            BuildableName = "IDZSwiftCommonCrypto.framework"
-            BlueprintName = "IDZSwiftCommonCrypto iOS"
+            BlueprintIdentifier = "0CCB89B519CE05F800068ED6"
+            BuildableName = "IDZSwiftCommonCryptoTests.xctest"
+            BlueprintName = "IDZSwiftCommonCryptoTests"
             ReferencedContainer = "container:IDZSwiftCommonCrypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,9 +79,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E95D25F1B2B3403000DD4DA"
-            BuildableName = "IDZSwiftCommonCrypto.framework"
-            BlueprintName = "IDZSwiftCommonCrypto iOS"
+            BlueprintIdentifier = "0CCB89B519CE05F800068ED6"
+            BuildableName = "IDZSwiftCommonCryptoTests.xctest"
+            BlueprintName = "IDZSwiftCommonCryptoTests"
             ReferencedContainer = "container:IDZSwiftCommonCrypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
