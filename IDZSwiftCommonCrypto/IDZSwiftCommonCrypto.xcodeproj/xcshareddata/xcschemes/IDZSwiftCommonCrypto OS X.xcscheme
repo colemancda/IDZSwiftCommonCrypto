@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0CCB89AA19CE05F800068ED6"
                BuildableName = "IDZSwiftCommonCrypto.framework"
-               BlueprintName = "IDZSwiftCommonCrypto"
+               BlueprintName = "IDZSwiftCommonCrypto OS X"
                ReferencedContainer = "container:IDZSwiftCommonCrypto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CCB89AA19CE05F800068ED6"
             BuildableName = "IDZSwiftCommonCrypto.framework"
-            BlueprintName = "IDZSwiftCommonCrypto"
+            BlueprintName = "IDZSwiftCommonCrypto OS X"
             ReferencedContainer = "container:IDZSwiftCommonCrypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CCB89AA19CE05F800068ED6"
             BuildableName = "IDZSwiftCommonCrypto.framework"
-            BlueprintName = "IDZSwiftCommonCrypto"
+            BlueprintName = "IDZSwiftCommonCrypto OS X"
             ReferencedContainer = "container:IDZSwiftCommonCrypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -81,7 +81,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CCB89AA19CE05F800068ED6"
             BuildableName = "IDZSwiftCommonCrypto.framework"
-            BlueprintName = "IDZSwiftCommonCrypto"
+            BlueprintName = "IDZSwiftCommonCrypto OS X"
             ReferencedContainer = "container:IDZSwiftCommonCrypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
